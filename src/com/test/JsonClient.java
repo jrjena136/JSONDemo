@@ -40,6 +40,7 @@ public class JsonClient {
 			}
 			
 		}catch(Exception e) {
+			System.out.println("Inside Catch Block");
 			System.out.println("Exception : " + e.getMessage());
 			e.printStackTrace();
 		}
