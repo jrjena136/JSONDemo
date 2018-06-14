@@ -36,9 +36,11 @@ public class JsonClient {
 				JsonObject contact = obj.get("contact").getAsJsonObject();
 				System.out.println("home : " + contact.get("home").getAsString());
 				System.out.println("work : " + contact.get("work").getAsString());
+				System.out.println("Processing end");
 			}
 			
 		}catch(Exception e) {
+			System.out.println("Exception : " + e.getMessage());
 			e.printStackTrace();
 		}
 	}
