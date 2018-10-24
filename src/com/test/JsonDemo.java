@@ -4,8 +4,17 @@ import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 
 public class JsonDemo {
+	
 
 	public static void main(String[] args) {
+		System.out.println("JsonDemo");
+		String response = getJsonObject().toString();
+		
+		System.out.println("response : "+response);
+
+	}
+	
+	public static JsonObject getJsonObject() {
 		JsonObject parentJsonObj = new JsonObject();
 		parentJsonObj.addProperty("name", "jyotiranjan");
 		parentJsonObj.addProperty("age", "24");
@@ -22,8 +31,7 @@ public class JsonDemo {
 		parentJsonObj.add("address", address);
 		parentJsonObj.add("contact", contact);
 		
-		System.out.println(parentJsonObj.toString());
-
+		return parentJsonObj;
 	}
 
 }
